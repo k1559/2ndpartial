@@ -1,0 +1,34 @@
+    <style type="text/css">
+     h1.negative { color : red; }
+    </style>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function MakeNegative() {
+        h1s = document.getElementsByTagName('h1');
+        for (var i=0; i<h1s.length; i++) {
+                var temp = h1s[i];
+                if (temp.firstChild.nodeValue.indexOf('-') == 0) temp.className = "negative";
+            }
+    }
+    //-->
+    </script>
+
+
+
+<ion-view title="Page2" id="page2">
+  <ion-content padding="true" class="has-header">
+    <div id="page2-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Placeholder</p>
+    </div>
+      
+      <h1>Symbol: {{ symbol }}</h1>
+      <h1>Price now: {{ price }}</h1>
+      <h1>Previous price: {{ previous }}</h1>
+      <h1 style="color:{{ vari }}">Difference: {{ difference }} </h1>
+      
+      <h2> {{ vinkki }} </h2>
+      
+      
+    <a ui-sref="page()" id="page2-button2" class="button button-positive button-block">Go back to the main page</a>
+  </ion-content>
+</ion-view>

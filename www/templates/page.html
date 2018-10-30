@@ -1,0 +1,17 @@
+<ion-view title="Page" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h1>Choose either:</h1>
+        
+    <h3>Apple Computer using: AAPL</h3>
+    <h3>General Electric Company using: GE</h3>
+    <h3>Starbucks Corporation using: SBUX</h3>
+    <h3>Walgreens Company using: WBA</h3>
+    <form id="page-form1" class="list">
+      <label class="item item-input" id="page-input1">
+        <span class="input-label">Company</span>
+        <input type="text" placeholder="" ng-model="mdl.symbol">
+      </label>
+    </form>
+    <a ui-sref="page2({ symbol: mdl.symbol })" id="page-button1" class="button button-positive button-block">See the results!</a>
+  </ion-content>
+</ion-view>
